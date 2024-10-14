@@ -22,7 +22,7 @@ class EmployeeAddonUpdateController extends Controller {
         $client = new Client();
 
         try {
-            $response = $client->get( 'https://api.github.com/repos/nijwel1/employee_addon/releases/latest', [
+            $response = $client->get( 'https://api.github.com/repos/nijwel1/employee/releases/latest', [
                 'headers' => [
                     'Authorization' => "Bearer {$token}",
                     'Accept'        => 'application/vnd.github.v3+json',
